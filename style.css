@@ -8,7 +8,7 @@ body{
     background-color: aqua;
 }
 .calender_container{
-    width: 300px;
+    width: 200px;
     text-align: center;
     background-color: white;
     border-radius: 10px;
@@ -38,4 +38,8 @@ body{
     font-size: 20px;
     color: darkgray;
     font-weight: 500;
+}
+.saat{
+    font-size: 20px;
+    color: darkblue;
 }

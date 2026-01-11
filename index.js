@@ -17,3 +17,13 @@ dayNameEl.innerText = date.toLocaleString("default", { weekday: "long" });
 dayNumEl.innerText = date.getDate();
 yearEl.innerText = date.getFullYear();
 saatEl.innerText = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+
+function set() { 
+    const now = new Date();
+    const hrs = now.getHours();
+    const mins = now.getMinutes();
+    const secs = now.getSeconds();
+}
+
+ 

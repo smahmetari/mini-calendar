@@ -4,10 +4,12 @@ body{
     justify-content: center;
     height: 100vh;
     align-items: center;
-    font-family: cursive;
+    font-family: 'Ariel', sans-serif;
     background-color: aqua;
+    overflow: hidden;
 }
 .calender_container{
+    position: relative;
     width: 200px;
     text-align: center;
     background-color: white;
@@ -39,7 +41,51 @@ body{
     color: darkgray;
     font-weight: 500;
 }
-.saat{
+.clock{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 10%;
+    font-weight: bold;
+    
+}
+.clock div{
+    margin: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.clock span{
+    width: 40px;
+    height: 20px;
+    display: flex;
     font-size: 20px;
-    color: darkblue;
+    background-color: rgb(127, 255, 144);
+    color: rgb(22, 4, 4);
+    padding: 1px 1%;
+    border-radius: 5px;
+
+    
+}
+.clock#ampm{
+    font-size: 10px;
+    padding: 5px 5px;
+    align-self: flex-end;
+    margin-bottom: 1px;
+    bottom: absolute;
+    width: 40px;
+    height: 20px;;
+}
+.clock.text{
+    font-size: 10px;
+    align-self: flex-start;
+    margin-top: 1px;
+    text-transform: uppercase;
+}
+.clock#ampm.text{
+    bottom: 0;
+    position: absolute;
+    width: 60px;
+    height: 20px;
 }
